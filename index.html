@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation javascript</title>
+
+    <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- mes fichiers -->
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="divForm col-12 col-lg-5">
+                <form id="formClient" action="affichage.html" method="get">
+                    <h1 id="titre">CONTACTER LE SERVICE CLIENT</h1>
+                    VOTRE DEMANDE: <br />
+                    <select id="selectType" name="demande"></select><br />
+                    <div id="demandeError" class="erreur"></div>
+                    MESSAGE: *<br />
+                    <textarea id="message" name="message" rows="3" cols="50" class="invalid" required></textarea><br />
+                    <div id="messageError" class="erreur"></div>
+                    VOTRE PRENOM: *<br />
+                    <input id="prenom" type="text" name="prenom" class="invalid" size="50" required><br />
+                    <div id="prenomError" class="erreur"></div>
+                    VOTRE NOM: *<br />
+                    <input id="nom" type="text" name="nom" class="invalid" size="50" required><br />
+                    <div id="nomError" class="erreur"></div>
+                    VOTRE COURRIEL: *<br />
+                    <input id="courriel" type="email" name="mail" class="invalid" size="50" required><br />
+                    <div id="courrielError" class="erreur"></div>
+                    VOTRE PHOTO: <br />
+                    <select id="selectPhoto" name="photo"></select>
+                    <img id="image" src="./photos/neutre.jpg" alt="photo du client">
+                    <div id="photoError" class="erreur"></div>
+
+                    <br />
+
+                    <button class="btn btn-success" id="valid" type="submit">Envoyer</button>
+                    <button id="btnReset" class="btn btn-light" type="reset">Rafraichir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/ecf.js"></script>
+</body>
+
+</html>

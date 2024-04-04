@@ -1,0 +1,2 @@
+let listeType = ["Votre demande concerne", "Information articles", "Commande & paiement", "Expédition & livraison", "Retour, échange & remboursement", "Code promo & Bon d'achat", "Newsletters", "Problème technique", "Autres demandes", "Protection des données personnelles"];
+let listePhoto = ["Choisir photo", "alain", "albert", "alfred", "alphonse", "alphonsine", "berth", "elisabeth", "gertrude", "gilbert", "gilberte", "hugh", "jacques", "john"];
